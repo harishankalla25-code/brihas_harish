@@ -1,0 +1,44 @@
+[
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "All",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2025-11-22 00:30:20.879491",
+  "name": "8tgqdvp2j9",
+  "permitted_roles": [
+   {
+    "parent": "8tgqdvp2j9",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "All"
+   }
+  ],
+  "reference_doctype": "Installation Task",
+  "reference_name": "INST-0006",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "All",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2025-11-22 00:30:32.978527",
+  "name": "919n4iqatl",
+  "permitted_roles": [
+   {
+    "parent": "919n4iqatl",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "All"
+   }
+  ],
+  "reference_doctype": "Installation Task",
+  "reference_name": "INST-0006",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "In Progress"
+ }
+]

@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Installation Task",
+  "enabled": 1,
+  "modified": "2025-11-22 00:49:45.630295",
+  "module": "brihas harish",
+  "name": "Restrict Supervisor field for Field Operator",
+  "script": "frappe.ui.form.on(\"Installation Task\", {\n    refresh(frm) {\n        if (frappe.user_roles.includes(\"Field Operator\")) {\n            frm.set_df_property(\"supervisor\", \"read_only\", 1);\n        }\n    }\n});\n",
+  "view": "Form"
+ }
+]

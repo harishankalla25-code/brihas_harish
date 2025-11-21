@@ -257,3 +257,18 @@ doc_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"dt": "Role", "filters": [
+        ["name", "in", [
+            "Admin", "Supervisor", "Field Operator"
+        ]]
+    ]},
+    {"dt": "Workflow State"},
+    {"dt": "Workflow Action"},
+    {"dt": "Workflow"},
+    {"dt": "Custom DocPerm" },
+    {"dt": "Client Script", "filters": [
+        ["module", "=", "Brihas Harish"]
+    ]},
+    {"dt": "Workflow Action Master"}
+]
