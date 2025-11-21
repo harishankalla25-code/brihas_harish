@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:INST-{####}",
+ "creation": "2025-11-21 23:13:04.574152",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "task_id",
+  "scheduled_date",
+  "location_side",
+  "field_operator",
+  "column_break_kgfz",
+  "booth",
+  "camera_id",
+  "supervisor",
+  "checklist_passed",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Data",
+   "label": "Task ID"
+  },
+  {
+   "fieldname": "column_break_kgfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "booth",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Booth",
+   "options": "Polling Booth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scheduled_date",
+   "fieldtype": "Date",
+   "label": "Scheduled Date"
+  },
+  {
+   "fieldname": "camera_id",
+   "fieldtype": "Link",
+   "label": "Camera ID",
+   "options": "Camera"
+  },
+  {
+   "fieldname": "location_side",
+   "fieldtype": "Select",
+   "label": "Location Side",
+   "options": "\nInside\nOutside"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Supervisor",
+   "options": "User"
+  },
+  {
+   "fieldname": "field_operator",
+   "fieldtype": "Link",
+   "label": "Field Operator",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "checklist_passed",
+   "fieldtype": "Check",
+   "label": "Checklist Passed"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Installation Task",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-22 00:16:09.991600",
+ "modified_by": "Administrator",
+ "module": "brihas harish",
+ "name": "Installation Task",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "task_id"
+}

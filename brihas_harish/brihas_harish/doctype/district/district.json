@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:district_name",
  "creation": "2025-11-21 22:46:38.006287",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,7 +14,8 @@
   {
    "fieldname": "district_name",
    "fieldtype": "Data",
-   "label": "District Name"
+   "label": "District Name",
+   "unique": 1
   },
   {
    "fieldname": "column_break_ebvx",
@@ -28,10 +30,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-21 23:03:34.110185",
+ "modified": "2025-11-21 23:59:16.881783",
  "modified_by": "Administrator",
  "module": "brihas harish",
  "name": "District",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -49,6 +52,7 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

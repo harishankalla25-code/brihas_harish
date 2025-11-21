@@ -137,6 +137,21 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+    "Polling Booth": {
+        "after_insert": "brihas_harish.brihas_harish.doctype.polling_booth.polling_booth.create_installation_task"
+    },
+    "Installation Task": {
+        "validate": "brihas_harish.brihas_harish.doctype.installation_task.installation_task.validate_installation_task",
+        "before_save": "brihas_harish.brihas_harish.doctype.installation_task.installation_task.validate_installation_task",
+        "on_submit": "brihas_harish.brihas_harish.doctype.installation_task.installation_task.on_submit_installation_task"
+    },
+    "Camera": {
+        "validate": "brihas_harish.brihas_harish.doctype.camera.camera.validate_camera"
+    }
+}
+
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",

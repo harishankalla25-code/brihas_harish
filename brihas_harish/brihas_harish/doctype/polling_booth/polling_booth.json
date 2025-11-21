@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:PB-{####}",
  "creation": "2025-11-21 22:50:38.364709",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -74,10 +75,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-21 22:56:58.804966",
+ "modified": "2025-11-22 00:00:48.312661",
  "modified_by": "Administrator",
  "module": "brihas harish",
  "name": "Polling Booth",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
