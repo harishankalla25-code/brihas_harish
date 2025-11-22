@@ -39,6 +39,9 @@
   {
    "fieldname": "scheduled_date",
    "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Scheduled Date"
   },
   {
@@ -56,6 +59,9 @@
   {
    "fieldname": "supervisor",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Supervisor",
    "options": "User"
   },
@@ -91,7 +97,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-22 00:16:09.991600",
+ "modified": "2025-11-22 08:02:08.566615",
  "modified_by": "Administrator",
  "module": "brihas harish",
  "name": "Installation Task",

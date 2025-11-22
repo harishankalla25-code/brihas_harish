@@ -1,0 +1,25 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "installations Per Day",
+   "width": "Full"
+  },
+  {
+   "chart": "Count Of Booths by Status",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-11-22 08:07:59.036967",
+ "dashboard_name": "Installation Per Day",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-11-22 08:12:29.881574",
+ "modified_by": "Administrator",
+ "module": "brihas harish",
+ "name": "Installation Per Day",
+ "owner": "Administrator"
+}

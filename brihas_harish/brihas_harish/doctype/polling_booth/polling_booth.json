@@ -37,6 +37,8 @@
   {
    "fieldname": "lac",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "LAC",
    "options": "LAC"
   },
@@ -44,6 +46,8 @@
    "fetch_from": "lac.district",
    "fieldname": "district",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "District",
    "options": "District",
    "read_only": 1
@@ -68,6 +72,8 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "\nPlanned\nSurveyed\nInstalled"
   }
@@ -75,7 +81,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-22 00:00:48.312661",
+ "modified": "2025-11-22 08:00:52.140578",
  "modified_by": "Administrator",
  "module": "brihas harish",
  "name": "Polling Booth",
