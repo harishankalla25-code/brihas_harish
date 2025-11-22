@@ -190,6 +190,10 @@ doc_events = {
 # ------------------------------
 #
 # override_whitelisted_methods = {
+#     "brihas_harish.api.ready_booths": "brihas_harish.api.ready_booths"
+# }
+
+# override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "brihas_harish.event.get_events"
 # }
 #
@@ -272,3 +276,4 @@ fixtures = [
     ]},
     {"dt": "Workflow Action Master"}
 ]
+import brihas_harish.api
