@@ -4,7 +4,8 @@ from frappe.model.document import Document
 class PollingBooth(Document):
     pass
 
-def create_installation_task(doc, method):
+# Fires automatically on After Insert
+def create_installation_task(doc, method=None):
     task = frappe.new_doc("Installation Task")
     task.booth = doc.name
     task.scheduled_date = frappe.utils.today()
@@ -16,8 +17,9 @@ def create_installation_task(doc, method):
         indicator="green"
     )
 
+# Manual button click
 @frappe.whitelist()
-def create_installation_task(name):
+def create_installation_task_manual(name):
     booth = frappe.get_doc("Polling Booth", name)
 
     task = frappe.new_doc("Installation Task")

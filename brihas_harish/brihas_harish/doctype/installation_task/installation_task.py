@@ -1,25 +1,20 @@
 import frappe
 from frappe.model.document import Document
-from frappe.model.workflow import apply_workflow
 
 class InstallationTask(Document):
     pass
-
 
 def validate_installation_task(doc, method=None):
 
     booth = frappe.get_doc("Polling Booth", doc.booth)
 
+    # Faulty camera check
     if doc.camera_id:
         cam = frappe.get_doc("Camera", doc.camera_id)
         if cam.health_status == "Faulty":
             frappe.throw(f"Camera {cam.name} is Faulty and cannot be installed.")
 
-    if doc.supervisor and doc.field_operator:
-        if doc.workflow_state == "Draft":
-            apply_workflow(doc, "Start Installation")
-            booth.db_set("status", "Surveyed")
-
+    # Completing checks
     if doc.workflow_state == "Completed":
         if not booth.power_available:
             frappe.throw("Cannot complete installation: Power not available.")
@@ -29,7 +24,16 @@ def validate_installation_task(doc, method=None):
 
         if not doc.checklist_passed:
             frappe.throw("Checklist must be passed before marking Installation Task as Completed.")
-            
+
+# NEW: safe workflow move before save
+def on_before_save(doc, method=None):
+
+    booth = frappe.get_doc("Polling Booth", doc.booth)
+
+    # Auto move to In Progress when both users assigned
+    if doc.supervisor and doc.field_operator and doc.workflow_state == "Draft":
+        doc.workflow_state = "In Progress"
+        booth.db_set("status", "Surveyed")
 
 
 def on_submit_installation_task(doc, method=None):
