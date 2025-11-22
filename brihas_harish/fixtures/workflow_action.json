@@ -1,6 +1,87 @@
 [
  {
   "completed_by": "Administrator",
+  "completed_by_role": "Field Operator",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2025-11-22 09:30:49.040118",
+  "name": "5jaqbi5vt1",
+  "permitted_roles": [
+   {
+    "parent": "5jaqbi5vt1",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Supervisor"
+   },
+   {
+    "parent": "5jaqbi5vt1",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Field Operator"
+   }
+  ],
+  "reference_doctype": "Installation Task",
+  "reference_name": "INST-0002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Field Operator",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2025-11-22 09:32:55.598041",
+  "name": "6qss1oa0v5",
+  "permitted_roles": [
+   {
+    "parent": "6qss1oa0v5",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Supervisor"
+   },
+   {
+    "parent": "6qss1oa0v5",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Field Operator"
+   }
+  ],
+  "reference_doctype": "Installation Task",
+  "reference_name": "INST-0003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2025-11-22 09:34:13.532447",
+  "name": "7j715ia5ac",
+  "permitted_roles": [
+   {
+    "parent": "7j715ia5ac",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Supervisor"
+   },
+   {
+    "parent": "7j715ia5ac",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Field Operator"
+   }
+  ],
+  "reference_doctype": "Installation Task",
+  "reference_name": "INST-0003",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "In Progress"
+ },
+ {
+  "completed_by": "Administrator",
   "completed_by_role": "All",
   "docstatus": 0,
   "doctype": "Workflow Action",
@@ -38,6 +119,33 @@
   "reference_doctype": "Installation Task",
   "reference_name": "INST-0006",
   "status": "Completed",
+  "user": null,
+  "workflow_state": "In Progress"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2025-11-22 09:38:41.339928",
+  "name": "a6tr300tdm",
+  "permitted_roles": [
+   {
+    "parent": "a6tr300tdm",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Supervisor"
+   },
+   {
+    "parent": "a6tr300tdm",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Field Operator"
+   }
+  ],
+  "reference_doctype": "Installation Task",
+  "reference_name": "INST-0002",
+  "status": "Open",
   "user": null,
   "workflow_state": "In Progress"
  }

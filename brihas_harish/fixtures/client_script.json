@@ -2,9 +2,20 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
+  "dt": "Polling Booth",
+  "enabled": 1,
+  "modified": "2025-11-22 09:31:52.077504",
+  "module": "brihas harish",
+  "name": "Create Installation Task",
+  "script": "frappe.ui.form.on(\"Polling Booth\", {\n    refresh(frm) {\n        if (!frm.is_new()) {\n            frm.add_custom_button(\"Create Installation Task\", function () {\n                frappe.call({\n                    method: \"brihas_harish.brihas_harish.doctype.polling_booth.polling_booth.create_installation_task_manual\",\n                    args: {\n                        name: frm.doc.name\n                    },\n                    callback: function (r) {\n                        if (r.message) {\n                            frappe.msgprint(`Installation Task <b>${r.message}</b> created!`);\n                            frm.reload_doc();\n                        }\n                    }\n                });\n            }, \"Quick Actions\");\n        }\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
   "dt": "Installation Task",
   "enabled": 1,
-  "modified": "2025-11-22 00:49:45.630295",
+  "modified": "2025-11-22 09:38:52.917310",
   "module": "brihas harish",
   "name": "Restrict Supervisor field for Field Operator",
   "script": "frappe.ui.form.on(\"Installation Task\", {\n    refresh(frm) {\n        if (frappe.user_roles.includes(\"Field Operator\")) {\n            frm.set_df_property(\"supervisor\", \"read_only\", 1);\n        }\n    }\n});\n",
